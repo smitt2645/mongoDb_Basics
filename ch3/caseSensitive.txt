@@ -1,0 +1,11 @@
+ // mongo db queries is case sensitive!
+
+ pre-defined collection name is school 
+
+ use school;
+
+* right way to access! 
+=>eg. db.school.find() (will work)
+
+*wrong way to access!
+=> eg db.School.find() // capitalization (won't work)

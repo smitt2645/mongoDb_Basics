@@ -1,0 +1,12 @@
+1) finding document in collection!
+=> db.collection_name.find() // all data will be show!
+=> db.collection_name.findOne('name':'smit') // one data will be show!
+
+2) importing json Data in MongoDb!
+path: /var/www/html/mongoDb_Basics/users.json !
+
+new wayto insert:
+mongoImport --uri=connectionString --collection=collection_name --file='path' --jsonArray
+
+=> mongoimport --uri="mongodb://localhost:27017/school" --collection=student --file='/var/www/html/mongoDb_Basics/users.json' --jsonArray
+

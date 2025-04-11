@@ -1,0 +1,11 @@
+MongoDb defalut behaviour is Ordered : 
+
+Ordered behaviour (defalut) : if on the execution time is there any error so it will stop execution !
+
+// prevent defalut behaviour! 
+// Error Case : it there is duplication of id with 2 data in 1000 data , do ordered:false => res: other data will be execute accept duplicate data !  
+ordered : false // it will continue execution if there are any error in data still it will execute other data accept error contains data!
+
+// Unordered behaviour :
+eg. db.collection_name.insertMany([{},{},{},...] , {ordered:false})
+

@@ -1,0 +1,1 @@
+Here we have basic documentation of the mongoDb!
